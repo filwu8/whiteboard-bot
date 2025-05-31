@@ -1,0 +1,10 @@
+services:
+
+  diagram-bot:
+    build: .
+    container_name: diagram-bot
+    ports:
+      - "8090:8080"  # 对外暴露端口可以修改为其他端口
+    environment:
+      - SYSTEM_PROMPT=Create a Mermaid diagram using the provided text description...
+    restart: unless-stopped
