@@ -25,3 +25,6 @@ excalidraw 的环境变量中修改，或者增加以下部分：
 因为apache 的配置不是按照路径转发顺序，是按照由长到短
 我用的apache版本是2.5
 
+
+修改原项目AI模块代码中的  await fetch  对应的 URL为你对应的转发地址
+excalidraw\excalidraw-app\components\AI.tsx
